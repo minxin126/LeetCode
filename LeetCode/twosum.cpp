@@ -11,16 +11,16 @@ const int N = 0;
 class Solution
 {
 public:
-	vector<int> twoSum(vector<int>&numbers, int target)
+	vector<int> twoSum(vector<int>&nums, int target)
 	{
-		int sz = numbers.size();     //sz为numbers这个向量中元素得个数
+		int sz = nums.size();     //sz为nums这个向量中元素得个数
 		vector<int> index; //向量的新的对象为Index
 		for (int i = 0; i < sz; i++)
 			for (int j = i + 1; j < sz; j++)
-				if (numbers[i] + numbers[j] == target) //两个数得和等于目标值
+				if (nums[i] + nums[j] == target) //两个数得和等于目标值
 				{
-					index.push_back(i + 1);  //返回i从1开始数的索引，存入index这个新的对象
-					index.push_back(j + 1);  //返回j从1开始数的索引，存入index这个新的对象
+					index.push_back(i);  //返回i从1开始数的索引，存入index这个新的对象
+					index.push_back(j);  //返回j从1开始数的索引，存入index这个新的对象
 					return index;//返回这个向量对象
 				}
 	}
