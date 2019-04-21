@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="twosum.cpp" />
+    <ClCompile Include="力扣第三题_字符串.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\MinGW\lib\gcc\mingw32\8.2.0\include\c++\mingw32\bits\stdc++.h" />
